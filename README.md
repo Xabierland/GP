@@ -1,2 +1,3 @@
 # GP
- Proyecto de Gestion de Proyectos
+
+Teorio, ejercicios y proyecto de Gestion de Proyectos
