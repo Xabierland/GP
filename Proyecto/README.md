@@ -38,12 +38,15 @@
 ### Funcionalidades
 
 - ¿Inicio de sesion?
+    - No hace falta
 - ¿Los docentes deben de poder editar la web?
   - Web estatica
 - ¿Comentarios?
   - Dudas o FAQ para hacer preguntas
 - ¿Algo que el cliente quiera que este expresamente?
   - No ha especificado nada
+- ¿Se debe de realizar el mecanismo del sorteo o solo hace falta almacenar los datos?
+  - 
 
 ### Diseño
 
