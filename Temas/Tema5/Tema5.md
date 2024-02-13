@@ -54,6 +54,35 @@
 
 ## Puntos de Función
 
-* 
+* Identificación de elementos y clasificación
+  * Relacionados con los datos
+    * Ficheros Logicos Internos (FLI)
+      * Grupo de datos mantenidos por el sistema
+        * Tablas de una base de datos
+        * Ficheros
+    * Ficheros de Interfaz Externos (FIE)
+      * Grupo de datos mantenidos por otro sistema
+      * Fichero Logico Interno de otro sistema
+  * Relacionados con las transacciones
+    * Entradas Externas (EE)
+      * Proceso que hace llegar datos desde el exterior al sistema
+      * Actualiza los FLI
+        * Pantallas de entrada de datos
+        * Codigos de barras
+    * Salidas Externas (SE)
+      * Proceso que hace llegar datos desde el sistema al exterior
+      * Procesa datos, no solo los muestra
+        * Informes
+        * Listados
+        * Graficos
+    * Consultas Externas (CE)
+      * Combinación de EE y SE
+      * Ni modifica ni añade datos
+        * Obtener datos para solo mostrarlos
+* Cálculo de los puntos de funcion no ajustados (PFNA)
+  * Se estudia cada elemento de funcion y se identifica sus componentes
+  * Se calcula los PFNA de cada elemento de funcion
+* Cálculo del factor de ajuste (FA)
+* Cálculo de los puntos de función ajustados (PFA)
 
 ## COCOMO II
