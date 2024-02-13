@@ -83,6 +83,32 @@
   * Se estudia cada elemento de funcion y se identifica sus componentes
   * Se calcula los PFNA de cada elemento de funcion
 * Cálculo del factor de ajuste (FA)
+  * Se calcula basado en catorce caracterisicas
+    1. Comunicación de datos
+    2. Procesamiento distribuido
+    3. Prestaciones
+    4. Facilidad de Configuración
+    5. Tasa de transacciones
+    6. Entrada de datos en linea
+    7. Diseño Eficiencia requerida del usuario final
+    8. Actualización en linea
+    9. Procesamiento complejo
+    10. Reusabilidad
+    11. Facilidad de instalación
+    12. Facilidad operacional
+    13. Adaptabilidad a multiples sitios
+    14. Facilidad de cambio
 * Cálculo de los puntos de función ajustados (PFA)
 
 ## COCOMO II
+
+* COnstructive COst MOdel
+* Modelo de estimación de costes mas utilizado
+* Objetivos
+  * Estimacion de tiempo y coste de acuerdo a los ciclos de vida
+  * Construir una base de datos de proyectos para calibrar el modelo e incrementar la precisión
+* Tres modelos
+  * ACM - Composición de aplicaciones
+    * 
+  * EDM - Diseño Temprano
+  * PAM - Post-Arquitectura
