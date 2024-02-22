@@ -24,7 +24,7 @@
     - Curso
     - Bachiller/FP
     - Familiar o alumno el que rellena
-    - Sorteo de mochilas para participantes
+      - Sorteo de mochilas para participantes
   - Salidas profesionales
   - No hace falta entrar en el temario aunque si en las asignaturas
 - ¿Fechas de entrega del proyecto?
@@ -38,15 +38,14 @@
 ### Funcionalidades
 
 - ¿Inicio de sesion?
-    - No hace falta
+  - No hace falta
 - ¿Los docentes deben de poder editar la web?
   - Web estatica
 - ¿Comentarios?
   - Dudas o FAQ para hacer preguntas
 - ¿Algo que el cliente quiera que este expresamente?
   - No ha especificado nada
-- ¿Se debe de realizar el mecanismo del sorteo o solo hace falta almacenar los datos?
-  - 
+- ¿Se debe de realizar el mecanismo del sorteo o solo hace falta almacenar los datos?j:
 
 ### Diseño
 
