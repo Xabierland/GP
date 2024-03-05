@@ -1,0 +1,10 @@
+version: '3'
+services:
+  apache:
+    image: httpd:latest
+    ports:
+      - 80:80
+    volumes:
+      - type: bind
+        source: ./src
+        target: /usr/local/apache2/htdocs
