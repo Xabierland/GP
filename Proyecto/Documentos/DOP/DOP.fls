@@ -557,10 +557,10 @@ INPUT ./DOP.out
 INPUT DOP.out
 INPUT ./DOP.out
 INPUT DOP.out
+OUTPUT DOP.pdf
 INPUT ./DOP.out
 INPUT ./DOP.out
 OUTPUT DOP.out
-OUTPUT DOP.pdf
 INPUT ./img/logo.jpg
 INPUT ./img/logo.jpg
 INPUT ./img/logo.jpg
@@ -578,9 +578,11 @@ INPUT ./DOP.toc
 INPUT DOP.toc
 INPUT DOP.toc
 OUTPUT DOP.toc
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT DOP.aux
 INPUT ./DOP.out
 INPUT ./DOP.out
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb
