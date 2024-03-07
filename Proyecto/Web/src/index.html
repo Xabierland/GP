@@ -15,7 +15,7 @@
     </header>
     <main>
         <aside>
-            <aside>
+            <nav>
                 <h2>Esquema de la página</h2>
                 <ul>
                     <li><a href="#Presentación">Presentación</a></li>
@@ -25,7 +25,7 @@
                     <li><a href="#Encuesta">Encuesta</a></li>
                     <li><a href="#FAQ">FAQ</a></li>
                 </ul>
-            </aside>
+            </nav>
         </aside>
         <article>
             <section id="Presentación">
@@ -402,25 +402,6 @@
     </main>
     <footer>
         <p>Grado en Ingeniería Civil - Universidad del Pais Vasco</p>
-        <div class="mode-switch">
-            <input type="checkbox" id="mode-toggle">
-            <label for="mode-toggle" class="toggle-label">
-                <span class="sun-icon">&#9728;</span>
-                <span class="moon-icon">&#9790;</span>
-            </label>
-        </div>
-        <script>
-            const modeToggle = document.getElementById('mode-toggle');
-            const html = document.documentElement;
-
-            modeToggle.addEventListener('change', () => {
-                if (modeToggle.checked) {
-                    html.classList.add('dark-mode');
-                } else {
-                    html.classList.remove('dark-mode');
-                }
-            });
-        </script>
     </footer>
 </body>
 </html>

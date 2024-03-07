@@ -5,13 +5,8 @@ html {
     margin-right: 10%;
 }
 
-html.dark-mode {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-html.light-mode main {
-    background-color: #fff;
+html main{
+    background-color: #ffffff;
     color: #000000;
 }
 
@@ -26,6 +21,9 @@ main {
 aside {
     flex-shrink: 0;
     width: 200px;
+}
+
+aside nav {
     position: sticky;
     top:0;
     left: 0;
