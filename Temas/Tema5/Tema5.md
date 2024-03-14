@@ -109,6 +109,31 @@
   * Construir una base de datos de proyectos para calibrar el modelo e incrementar la precisión
 * Tres modelos
   * ACM - Composición de aplicaciones
-    * 
+    * Se decide en la etapa de planificación
+    * Ya se debe tener una idea de la arquitectura
+    * Principalmente para constuir interfaces graficas
+    * Utiliza Puntos de Objeto
+      * Estima la cantidad de pantallas, informes y componentes.
+      * Clasifica segun la complejidad
+      * Se suman todos los puntos
+      * Se estima el porcentaje de codigo a reusar.
+      * Calcula el ratio de la productividad
+      * Se calcula el esfuerzo
   * EDM - Diseño Temprano
+    * Primeras etapas
+    * Cuando se tiene poca informacion sobre el proyecto
+    * Basado en puntos de funcion no ajustados
+    * Se convierte los PFNA en lineas de codigo
+    * Se usan 7 drivers para ajustarlo.
+      * Calcular los PFNA
+      * Convertir los PFNA a miles de lineas de codigo
+      * Calcular el esfuerzo
+      * Se ajusta el esfuerzo
   * PAM - Post-Arquitectura
+    * El mas detallado
+    * Ya se conoce la arquitectura completa
+    * Tiene 17 factores de ajuste
+      * Calcular los PFNA
+      * Convertir los PFNA a miles de lineas de codigo
+      * Calcular el esfuerzo
+      * Se ajusta el esfuerzo
