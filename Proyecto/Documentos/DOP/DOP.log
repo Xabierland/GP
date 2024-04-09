@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.8)  9 APR 2024 16:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.8)  9 APR 2024 16:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -421,7 +421,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 103--104
 [7
 
 ]
-<./img/arquitectura.png, id=186, 1027.84pt x 770.88pt>
+<./img/arquitectura.png, id=188, 1027.84pt x 770.88pt>
 File: ./img/arquitectura.png Graphic file (type png)
 <use ./img/arquitectura.png>
 Package pdftex.def Info: ./img/arquitectura.png  used on input line 114.
@@ -438,7 +438,7 @@ Cap\'{\i }tulo 6.
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
 (hyperref)                than one, level fixed on input line 143.
 
-<./img/ciclo_vida.png, id=201, 475.7775pt x 473.77pt>
+<./img/ciclo_vida.png, id=203, 475.7775pt x 473.77pt>
 File: ./img/ciclo_vida.png Graphic file (type png)
 <use ./img/ciclo_vida.png>
 Package pdftex.def Info: ./img/ciclo_vida.png  used on input line 148.
@@ -446,7 +446,7 @@ Package pdftex.def Info: ./img/ciclo_vida.png  used on input line 148.
 [11
 
  <./img/ciclo_vida.png>]
-<./img/edt.png, id=207, 1537.745pt x 1347.0325pt>
+<./img/edt.png, id=209, 1537.745pt x 1347.0325pt>
 File: ./img/edt.png Graphic file (type png)
 <use ./img/edt.png>
 Package pdftex.def Info: ./img/edt.png  used on input line 157.
@@ -483,17 +483,17 @@ Package rerunfilecheck Info: File `DOP.out' has not changed.
 (rerunfilecheck)             Checksum: 922492B75E7A449E8DDF5932EF3BF97C;3967.
  ) 
 Here is how much of TeX's memory you used:
- 11805 strings out of 475248
- 186524 string characters out of 5757814
- 1936785 words of memory out of 5000000
- 33136 multiletter control sequences out of 15000+600000
+ 11807 strings out of 475248
+ 186538 string characters out of 5757814
+ 1935785 words of memory out of 5000000
+ 33137 multiletter control sequences out of 15000+600000
  560492 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,781b,523s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb>
-Output written on DOP.pdf (19 pages, 693836 bytes).
+Output written on DOP.pdf (19 pages, 694531 bytes).
 PDF statistics:
- 277 PDF objects out of 1000 (max. 8388607)
- 56 named destinations out of 1000 (max. 500000)
+ 279 PDF objects out of 1000 (max. 8388607)
+ 57 named destinations out of 1000 (max. 500000)
  221 words of extra memory for PDF output out of 10000 (max. 10000000)
 

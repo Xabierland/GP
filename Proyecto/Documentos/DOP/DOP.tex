@@ -200,7 +200,7 @@
         \begin{center}
             \begin{longtable}{|p{6cm}|p{6cm}|}
                 \hline
-                \textbf{Descripción} & Asegurar que los datos recogidos en Google Forms no sean accesibles por terceros.\\
+                \textbf{Descripción} & La información almacenada en Google Forms es accedida por un tercero.\\
                 \hline
                 \textbf{Prevención} & Cifrar la conexion con la web y usar contraseña seguras con 2FA en la cuenta de Google.\\
                 \hline
@@ -217,7 +217,7 @@
         \begin{center}
             \begin{longtable}{|p{6cm}|p{6cm}|}
                 \hline
-                \textbf{Descripción} & Asegurar que la página web no utiliza ningun elemento incompatible con los navegadores actuales.\\
+                \textbf{Descripción} & Los navegadores no muestra parte o la totalidad de la página web correctamente.\\
                 \hline
                 \textbf{Prevención} & Probar de forma periodica la página web en los navegadores más utilizados.\\
                 \hline
@@ -233,17 +233,33 @@
         \begin{center}
             \begin{longtable}{|p{6cm}|p{6cm}|}
                 \hline
-                \textbf{Descripción} & Asegurar que la página web escala correctamente en función del número de usuarios y que no se producen caidas.\\
+                \textbf{Descripción} & La pagina web sufre caidas debido a la gran cantidad de usuarios que acceden a ella o a ataques de denegación de servicio.\\
                 \hline
                 \textbf{Prevención} & Realizar pruebas de carga en la página web.\\
                 \hline
-                \textbf{Plan de contingencia} & Aumentar la capacidad de la página web mediante la creación de más contenedores (escalado horizontal).\\
+                \textbf{Plan de contingencia} & Aumentar la capacidad de la página web mediante la creación de más contenedores cuando sea necesario (escalado horizontal).\\
                 \hline
                 \textbf{Probabilidad} & Alta\\
                 \hline
                 \textbf{Impacto} & Alto\\
                 \hline
                 \caption{Problemas de escalabilidad}
+            \end{longtable}
+        \end{center}
+        \begin{center}
+            \begin{longtable}{|p{6cm}|p{6cm}|}
+                \hline
+                \textbf{Descripción} & La pagina tarda en cargar debido a el peso de los elementos multimedia.\\
+                \hline
+                \textbf{Prevención} & Realizar pruebas de carga en la página web.\\
+                \hline
+                \textbf{Plan de contingencia} & Cambiar la codificación de los elementos multimedia para que pesen menos.\\
+                \hline
+                \textbf{Probabilidad} & Media\\
+                \hline
+                \textbf{Impacto} & Muy bajo\\
+                \hline
+                \caption{Elementos pesados}
             \end{longtable}
         \end{center}
     \chapter{Evaluación económica} %TODO
