@@ -14,13 +14,13 @@
 \contentsline {chapter}{\numberline {4}Arquitectura}{7}{chapter.4}%
 \contentsline {chapter}{\numberline {5}Herramientas}{9}{chapter.5}%
 \contentsline {chapter}{\numberline {6}Alcance del proyecto}{11}{chapter.6}%
-\contentsline {subsection}{\numberline {6.0.1}Ciclo de vida}{11}{subsection.6.0.1}%
-\contentsline {subsection}{\numberline {6.0.2}Fases del proyecto}{12}{subsection.6.0.2}%
-\contentsline {section}{\numberline {6.1}Planificación y Gestión}{13}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Diseño}{13}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Implementación}{13}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Plan de pruebas}{13}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Documentación}{13}{section.6.5}%
-\contentsline {chapter}{\numberline {7}Planificación temporal}{14}{chapter.7}%
-\contentsline {chapter}{\numberline {8}Riesgos}{15}{chapter.8}%
-\contentsline {chapter}{\numberline {9}Evaluación económica}{17}{chapter.9}%
+\contentsline {section}{\numberline {6.1}Ciclo de vida}{11}{section.6.1}%
+\contentsline {section}{\numberline {6.2}Fases del proyecto}{12}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Planificación y Gestión}{13}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Diseño}{13}{subsection.6.2.2}%
+\contentsline {subsection}{\numberline {6.2.3}Implementación}{14}{subsection.6.2.3}%
+\contentsline {subsection}{\numberline {6.2.4}Plan de pruebas}{14}{subsection.6.2.4}%
+\contentsline {subsection}{\numberline {6.2.5}Documentación}{14}{subsection.6.2.5}%
+\contentsline {chapter}{\numberline {7}Planificación temporal}{15}{chapter.7}%
+\contentsline {chapter}{\numberline {8}Riesgos}{16}{chapter.8}%
+\contentsline {chapter}{\numberline {9}Evaluación económica}{18}{chapter.9}%
