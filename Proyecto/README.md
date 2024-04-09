@@ -60,3 +60,8 @@
   - Da igual
 - ¿La web debe de ser visible para todos los dispositivos [Diseño responsive]?
   - Vale con ordenador
+
+## Reunion con el cliente
+
+- Video en la parte superior
+- Encuesta especificar que son datos del estudiante
