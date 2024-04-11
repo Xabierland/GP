@@ -48,7 +48,7 @@ Presupuesto utilizado: 50%
 - AC = 8000 * 0.5 = 4000
 - SPI = EV / PV = 3200 / 3040 = 1.05
 - CPI = EV / AC = 3200 / 4000 = 0.8
-- TCPI = (BAC - EV) / (BAC - AC) = (8000 - 3200) / (8000 - 4000) = 0.67
+- TCPI = (BAC - EV) / (BAC - AC) = (8000 - 3200) / (8000 - 4000) = 1.2
 
 ¿La tarea esta adelantada?
 > SPI > 1 => Si
