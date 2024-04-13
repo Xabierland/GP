@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.8)  13 APR 2024 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.10) (preloaded format=pdflatex 2024.1.8)  13 APR 2024 17:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -493,21 +493,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 496--498
 
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 498--500
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 510--511
-
- []
-
 [19
 
 ] [20
@@ -519,24 +504,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 510--511
 ] [23
 
 ]
-Underfull \hbox (badness 5359) in paragraph at lines 724--725
+Underfull \hbox (badness 5359) in paragraph at lines 722--723
 []|\OT1/cmr/m/n/10 Desarrollo del dia-gra-ma del EDT
  []
 
 [24
 
 ]
-Underfull \hbox (badness 2126) in paragraph at lines 763--764
+Underfull \hbox (badness 2126) in paragraph at lines 761--762
 []|\OT1/cmr/m/n/10 1.1.6.1 De-sa-rro-llo del dia-gra-ma del
  []
 
 
-Underfull \hbox (badness 1867) in paragraph at lines 769--770
+Underfull \hbox (badness 1867) in paragraph at lines 767--768
 []|\OT1/cmr/m/n/10 Descripci^^Son del pa-que-te de tra-ba-jo
  []
 
 
-Underfull \hbox (badness 2126) in paragraph at lines 785--786
+Underfull \hbox (badness 2126) in paragraph at lines 783--784
 []|\OT1/cmr/m/n/10 1.1.6.1 De-sa-rro-llo del dia-gra-ma del
  []
 
@@ -551,7 +536,7 @@ Underfull \hbox (badness 2126) in paragraph at lines 785--786
 ] [29
 
 ]
-Underfull \hbox (badness 1142) in paragraph at lines 1014--1015
+Underfull \hbox (badness 1142) in paragraph at lines 1012--1013
 []|\OT1/cmr/m/n/10 Insertar el vi-deo en la p^^Sagi-na web
  []
 
@@ -566,7 +551,7 @@ Underfull \hbox (badness 1142) in paragraph at lines 1014--1015
 ] [34
 
 ]
-Underfull \hbox (badness 7397) in paragraph at lines 1219--1220
+Underfull \hbox (badness 7397) in paragraph at lines 1217--1218
 []|\OT1/cmr/m/n/10 Realizar pre-sen-ta-ci^^Son del pro-yec-to
  []
 
@@ -592,7 +577,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  75i,7n,79p,781b,642s stack positions out of 10000i,1000n,20000p,200000b,200000s
  <C:\Users\xabie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcbx1000.pk> <C:\Users\xabie\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1000.pk><C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr17.pfb><C:/Users/xabie/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on DOP.pdf (36 pages, 795190 bytes).
+Output written on DOP.pdf (36 pages, 795192 bytes).
 PDF statistics:
  437 PDF objects out of 1000 (max. 8388607)
  106 named destinations out of 1000 (max. 500000)
