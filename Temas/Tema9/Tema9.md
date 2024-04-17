@@ -33,7 +33,7 @@
   - CPI - Cost Performance Index
     - Si estamos gastando mas o menos de lo que deberiamos
   - TCPI - To Complete Performance Index
-    - CPI que necesitamos para terminar a tiempo
+    - CPI que necesitamos para terminar en el presupuesto
 
 ### Ejercicio
 
