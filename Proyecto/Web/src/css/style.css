@@ -1,84 +1,101 @@
 html {
     font-family: Helvetica;
-    font-size: 16px;
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-html main{
-    background-color: #ffffff;
+    background-color: #f9f9f9;
     color: #000000;
 }
 
-header {
+.layout > * {
+    box-shadow: 10px 6px 37px -13px rgba(51,51,51,0.74);
+    border-radius: 10px;
+    padding: 10px;
     text-align: center;
+    font-weight: 500;
 }
 
-main {
-    display: flex;
+.layout{
+    display: grid;
+    gap: 20px;
+    grid-template:
+    "header" auto
+    "navbar" auto
+    "sidebar" auto
+    "main" auto
+    "footer" auto;
+    
+    .header{
+        grid-area: header;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav{
+        grid-area: navbar;
+        background-color: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .aside{
+        grid-area: sidebar;
+        background-color: #ffffff;
+    }
+
+    .main{
+        grid-area: main;
+        background-color: #ffffff;
+
+        .section{
+            gap: 10px;
+            width: 100%;
+        }
+    }
+
+    .footer{
+        grid-area: footer;
+        background-color: #ffffff;
+    }
+
+    @media (min-width: 768px){
+        grid-template:
+        "header navbar" auto
+        "sidebar main" auto
+        "footer footer" auto/
+        400px auto;
+    }
 }
 
-aside {
-    flex-shrink: 0;
-    width: 200px;
-}
-
-aside nav {
-    position: sticky;
-    top:0;
-    left: 0;
-}
-
-aside ul {
-    list-style: none;
+ul{
+    list-style-type: none;
     padding: 0;
-    margin-left: 15px;
 }
 
-aside ul li {
-    margin: 10px 0;
+nav ul{
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-aside ul li a {
-    text-decoration: none;
+nav ul li {
+    margin-right: 10px;
+    border-right: 1px solid #000000;
+    padding-right: 10px;
 }
 
-article {
-    flex-grow: 1;
+nav ul li:last-child {
+    margin-right: 0;
+    border-right: none;
+    padding-right: 0;
 }
 
-article h3 {
-    margin-left: 20px;
+aside ul{
+    gap: 10px;
+    
 }
 
-article p, table, iframe {
-    margin-left: 60px;
-}
-
-section
-{
-    width: 70%;
-    margin: 0 auto;
-}
-
-table {
-    border-collapse: collapse;
-    margin: 20px;
-}
-
-table tr {
-    border-bottom: 1px solid #000;
-}
-
-table td {
-    border-right: 1px solid #000;
-    border-left: 1px solid #000; /* Add border to the left side */
-    padding: 5px;
-    width: 100px; /* Tamaño fijo de las celdas */
-}
-
-footer {
-    text-align: center;
-    bottom: 0;
-    margin-top: 50px;
+section{
+    gap: 25px;
 }
