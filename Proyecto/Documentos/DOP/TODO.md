@@ -4,12 +4,12 @@
 
 ### 7
 
-- [ ] Mostrar holguras y camino critico
-- [ ] Texto introductorio
+- [X] Mostrar holguras y camino critico
+- [X] Texto introductorio
 
 ### 8
 
-- [ ] Introduccion
+- [X] Introduccion
 - [ ] Los riesgos son del proyecto y no de la aplicacion
 
 ### 9
@@ -19,7 +19,7 @@
 
 ## Web - Xabier Gabiña
 
-- [ ] Terminar la web
+- [X] Terminar la web
 
 ## Video - Pablo Leclercq
 
