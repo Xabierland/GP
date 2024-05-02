@@ -3,8 +3,7 @@
 ## Miembros
 
 - Xabier Gabiña
-- Endika Postigo
-- Xabier Badiola
+- Pablo Leclerqc
 - Ander Gorocica
 - Asier Larrazabal
 
