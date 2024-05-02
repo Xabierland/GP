@@ -8,43 +8,46 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {7.1}{Planificacion temporal}}{16}{table.7.1}%
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {8.1}{Vulnerabilidades de seguridad}}{17}{table.8.1}%
-\contentsline {table}{\numberline {8.2}{Perdida de información}}{17}{table.8.2}%
-\contentsline {table}{\numberline {8.3}{Seguridad de datos}}{17}{table.8.3}%
-\contentsline {table}{\numberline {8.4}{Compatibilidad de navegadores}}{18}{table.8.4}%
-\contentsline {table}{\numberline {8.5}{Problemas de escalabilidad}}{18}{table.8.5}%
-\contentsline {table}{\numberline {8.6}{Elementos pesados}}{18}{table.8.6}%
+\contentsline {table}{\numberline {8.1}{Perdida de información}}{17}{table.8.1}%
+\contentsline {table}{\numberline {8.2}{Enfermedad de un miembro del equipo}}{17}{table.8.2}%
+\contentsline {table}{\numberline {8.3}{Abandono de un miembro del equipo}}{17}{table.8.3}%
+\contentsline {table}{\numberline {8.4}{Cambio de requisitos del proyecto}}{18}{table.8.4}%
+\contentsline {table}{\numberline {8.5}{Falta de comunicación}}{18}{table.8.5}%
+\contentsline {table}{\numberline {8.6}{Falta de recursos}}{18}{table.8.6}%
+\contentsline {table}{\numberline {8.7}{Retraso en la entrega del proyecto}}{19}{table.8.7}%
+\contentsline {table}{\numberline {8.8}{Mala gestión del tiempo}}{19}{table.8.8}%
+\contentsline {table}{\numberline {8.9}{Expectativas no realistas}}{19}{table.8.9}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {10.1}{Propósitos del proyecto}}{20}{table.10.1}%
-\contentsline {table}{\numberline {10.2}{Ámbitos de aplicación}}{20}{table.10.2}%
-\contentsline {table}{\numberline {10.3}{Contexto de negocio}}{21}{table.10.3}%
-\contentsline {table}{\numberline {10.4}{Descripción}}{21}{table.10.4}%
-\contentsline {table}{\numberline {10.5}{Problemas que resuelve}}{22}{table.10.5}%
-\contentsline {table}{\numberline {10.6}{Valor del desarrollo}}{22}{table.10.6}%
-\contentsline {table}{\numberline {10.7}{Objetivos del proyecto}}{23}{table.10.7}%
-\contentsline {table}{\numberline {10.8}{Arquitectura}}{23}{table.10.8}%
-\contentsline {table}{\numberline {10.9}{Herramientas}}{24}{table.10.9}%
-\contentsline {table}{\numberline {10.10}{Desarrollo del diagrama del EDT}}{24}{table.10.10}%
-\contentsline {table}{\numberline {10.11}{Ciclo de vida del proyecto}}{25}{table.10.11}%
-\contentsline {table}{\numberline {10.12}{Descripción del paquete de trabajo}}{25}{table.10.12}%
-\contentsline {table}{\numberline {10.13}{Planificación temporal}}{26}{table.10.13}%
-\contentsline {table}{\numberline {10.14}{Riesgos}}{26}{table.10.14}%
-\contentsline {table}{\numberline {10.15}{Evaluación económica}}{27}{table.10.15}%
-\contentsline {table}{\numberline {10.16}{Captura de requisitos}}{27}{table.10.16}%
-\contentsline {table}{\numberline {10.17}{Identificación de los interesados}}{28}{table.10.17}%
-\contentsline {table}{\numberline {10.18}{Elegir esquema de colores}}{28}{table.10.18}%
-\contentsline {table}{\numberline {10.19}{Elegir elementos que se van a mostrar}}{29}{table.10.19}%
-\contentsline {table}{\numberline {10.20}{Elegir los campos del formulario}}{29}{table.10.20}%
-\contentsline {table}{\numberline {10.21}{Crear guion del video}}{30}{table.10.21}%
-\contentsline {table}{\numberline {10.22}{Insertar el video en la página web}}{30}{table.10.22}%
-\contentsline {table}{\numberline {10.23}{Crear guion del video}}{31}{table.10.23}%
-\contentsline {table}{\numberline {10.24}{Generar el formulario}}{31}{table.10.24}%
-\contentsline {table}{\numberline {10.25}{Obtener el metraje}}{32}{table.10.25}%
-\contentsline {table}{\numberline {10.26}{Editar el metraje}}{32}{table.10.26}%
-\contentsline {table}{\numberline {10.27}{Desplegar el sistema web}}{33}{table.10.27}%
-\contentsline {table}{\numberline {10.28}{Probar la recogida de datos}}{33}{table.10.28}%
-\contentsline {table}{\numberline {10.29}{Probar la visualización del video}}{34}{table.10.29}%
-\contentsline {table}{\numberline {10.30}{Realizar la memoria final del proyecto}}{34}{table.10.30}%
-\contentsline {table}{\numberline {10.31}{Realizar presentación del proyecto}}{35}{table.10.31}%
-\contentsline {table}{\numberline {10.32}{Diagrama de ROY}}{36}{table.10.32}%
+\contentsline {table}{\numberline {10.1}{Propósitos del proyecto}}{21}{table.10.1}%
+\contentsline {table}{\numberline {10.2}{Ámbitos de aplicación}}{21}{table.10.2}%
+\contentsline {table}{\numberline {10.3}{Contexto de negocio}}{22}{table.10.3}%
+\contentsline {table}{\numberline {10.4}{Descripción}}{22}{table.10.4}%
+\contentsline {table}{\numberline {10.5}{Problemas que resuelve}}{23}{table.10.5}%
+\contentsline {table}{\numberline {10.6}{Valor del desarrollo}}{23}{table.10.6}%
+\contentsline {table}{\numberline {10.7}{Objetivos del proyecto}}{24}{table.10.7}%
+\contentsline {table}{\numberline {10.8}{Arquitectura}}{24}{table.10.8}%
+\contentsline {table}{\numberline {10.9}{Herramientas}}{25}{table.10.9}%
+\contentsline {table}{\numberline {10.10}{Desarrollo del diagrama del EDT}}{25}{table.10.10}%
+\contentsline {table}{\numberline {10.11}{Ciclo de vida del proyecto}}{26}{table.10.11}%
+\contentsline {table}{\numberline {10.12}{Descripción del paquete de trabajo}}{26}{table.10.12}%
+\contentsline {table}{\numberline {10.13}{Planificación temporal}}{27}{table.10.13}%
+\contentsline {table}{\numberline {10.14}{Riesgos}}{27}{table.10.14}%
+\contentsline {table}{\numberline {10.15}{Evaluación económica}}{28}{table.10.15}%
+\contentsline {table}{\numberline {10.16}{Captura de requisitos}}{28}{table.10.16}%
+\contentsline {table}{\numberline {10.17}{Identificación de los interesados}}{29}{table.10.17}%
+\contentsline {table}{\numberline {10.18}{Elegir esquema de colores}}{29}{table.10.18}%
+\contentsline {table}{\numberline {10.19}{Elegir elementos que se van a mostrar}}{30}{table.10.19}%
+\contentsline {table}{\numberline {10.20}{Elegir los campos del formulario}}{30}{table.10.20}%
+\contentsline {table}{\numberline {10.21}{Crear guion del video}}{31}{table.10.21}%
+\contentsline {table}{\numberline {10.22}{Crear guion del video}}{31}{table.10.22}%
+\contentsline {table}{\numberline {10.23}{Insertar el video en la página web}}{32}{table.10.23}%
+\contentsline {table}{\numberline {10.24}{Generar el formulario}}{32}{table.10.24}%
+\contentsline {table}{\numberline {10.25}{Obtener el metraje}}{33}{table.10.25}%
+\contentsline {table}{\numberline {10.26}{Editar el metraje}}{33}{table.10.26}%
+\contentsline {table}{\numberline {10.27}{Desplegar el sistema web}}{34}{table.10.27}%
+\contentsline {table}{\numberline {10.28}{Probar la recogida de datos}}{34}{table.10.28}%
+\contentsline {table}{\numberline {10.29}{Probar la visualización del video}}{35}{table.10.29}%
+\contentsline {table}{\numberline {10.30}{Realizar la memoria final del proyecto}}{35}{table.10.30}%
+\contentsline {table}{\numberline {10.31}{Realizar presentación del proyecto}}{36}{table.10.31}%
+\contentsline {table}{\numberline {10.32}{Diagrama de ROY}}{37}{table.10.32}%

@@ -33,8 +33,6 @@
         \Large Autor:\\
         \vspace{0.2cm}
         \large Xabier Gabiña\\
-        \large Endika Postigo\\
-        \large Xabier Badiola\\
         \large Ander Gorocica\\
         \large Asier Larrazabal\\
         \large Pablo Leclercq\\
@@ -105,10 +103,11 @@
         \clearpage
         La arquitectura de este sistema web funciona de la siguiente manera:
         \begin{itemize}
-            \item El usuario accede a la página web desde su navegador.
-            \item La página web esta desplegada en un cluster Kubernetes corriendo en Google Cloud que asegura la disponibilidad de la página web.
-            \item Dicho cluster esta corriendo un 'Pod' con la imagen Docker de la página web de esta forma se consigue que la web sea facilmente escalable.
-            \item La página web carga elementos de Youtube y Google Forms mediante iFrames además de los elementos propios y los muestra mediante el navegador al usuario.
+            \item El usuario accede a la página web desde su navegador metiendo la URL de la página web.
+            \item El navegador hace una petición al DNS de Cloudflare para que le devuelva la IP del servidor donde está alojada la página web.
+            \item El servidor recibe la petición y devuelve la página web al navegador del usuario.
+            \item Esta web, esta desplegada en un contenedor de Docker que a su vez esta desplegada en un contenedor LXC de Proxmox.
+            \item La pagina web carga mediante iframes el video de Youtube y el formulario de Google Forms junto con el resto de la información.
         \end{itemize}
         \begin{figure}[H]
             \centering
@@ -126,14 +125,16 @@
             LaTeX es un sistema de composición de textos, orientado a la creación de documentos escritos que presenten una alta calidad tipográfica. Lo utilizaremos para la redacción de la documentacion.
         \section*{Apache HTTP Server}
             Apache HTTP Server es un servidor web HTTP de código abierto multiplataforma que nos servira para desarrollar nuestra página web.
+        \section*{Cloudflare}
+            Cloudflare es una empresa de servicios de seguridad y rendimiento en Internet que proporciona una red de entrega de contenido, servicios de seguridad DDoS y servicios de DNS distribuidos. Utilizaremos Cloudflare para proteger nuestra página web de ataques DDoS y para acelerar la carga de la página web.
         \section*{Docker}
             Docker es un proyecto de código abierto que automatiza el despliegue de aplicaciones dentro de contenedores de software, proporcionando una capa adicional de abstracción y automatización de virtualización a nivel de sistema operativo en Linux. Utilizaremos Docker para desplegar nuestra página web en un contenedor.
-        \section*{Kubernetes}
-            Kubernetes es un sistema de código abierto para la automatización del despliegue, escalado y manejo de aplicaciones en contenedores originalmente diseñada por Google. La usaremos para desplegar nuestra imagen Docker en un cluster de Google Cloud.
+        \section*{Proxmox}
+            Proxmox Virtual Environment es una plataforma de virtualización de código abierto para ejecutar aplicaciones y máquinas virtuales. Utilizaremos Proxmox para desplegar los contenedores de Docker mediante LXC.
+        \section*{LXC}
+            LXC es una tecnología de virtualización que permite ejecutar múltiples sistemas Linux en un único host. Utilizaremos LXC para desplegar los contenedores de Docker en Proxmox.
         \section*{VSCode}
             Visual Studio Code es un editor de código fuente desarrollado por Microsoft para Windows, Linux y macOS. Lo utilizaremos para la programación de la página web.
-        \section*{Google Cloud Platform}
-            Google Cloud Platform es una suite de servicios en la nube que se ejecutan en la misma infraestructura que Google utiliza internamente para sus productos de usuario final, como Google Search y YouTube. Junto con un conjunto de herramientas de administración, seguridad y desarrollo, Google Cloud Platform proporciona una serie de servicios como es el caso de Kubernete Engine.
         \section*{Google Forms}
             Google Forms es una herramienta de Google que nos permite crear encuestas y cuestionarios de manera sencilla y rápida. Lo utilizaremos para recoger información de los interesados en cursar el grado de Ingeniería Civil.
         \section*{Youtube}
@@ -250,15 +251,14 @@
                 \begin{itemize}
                     \item Pruebas de la página web (Duración: 6 días)
                     \begin{itemize}
-                        \item Realizar las pruebas de la página web
-                    \end{itemize}
-                    \item Pruebas del video promocional (Duración: 3 días)
-                    \begin{itemize}
-                        \item Realizar las correcta visualización del video en la página web
-                    \end{itemize}
-                    \item Pruebas del formulario de Google Forms (Duración: 3 días)
-                    \begin{itemize}
-                        \item Comprobar la correcta integración del formulario en la página web
+                        \item Pruebas del video promocional (Duración: 3 días)
+                        \begin{itemize}
+                            \item Realizar las correcta visualización del video en la página web
+                        \end{itemize}
+                        \item Pruebas del formulario de Google Forms (Duración: 3 días)
+                        \begin{itemize}
+                            \item Comprobar la correcta integración del formulario en la página web
+                        \end{itemize}
                     \end{itemize}
                 \end{itemize}
                 Duración total: 6 días
@@ -374,7 +374,7 @@
                 \hline
                 4.1.1 Pruebas la recogida de datos & 18 persona-dia & 3 día\\
                 \hline
-                4.2 Pruebas del video & 18 persona-dia & 3 día\\
+                4.1.2 Pruebas del video & 18 persona-dia & 3 día\\
                 \hline
                 \textbf{5. Documentación} &  & \\
                 \hline
@@ -401,101 +401,159 @@
         \paragraph*{}{
             La gestion de riesgos es un proceso que permite identificar, evaluar y priorizar los riesgos del proyecto. A continuación, se presentan los riesgos identificados en el proyecto, junto con su prevención y plan de contingencia.
         }
+        % PERDIDA DE INFORMACION
         \begin{center}
             \begin{longtable}{|p{6cm}|p{6cm}|}
                 \hline
-                \textbf{Descripción} & Que un agente externo mediante una vulnerabilidad de seguridad pueda realizar acciones no autorizadas en la página web.\\
+                \textbf{Descripción} & Perdida de la información del proyecto.\\
                 \hline
-                \textbf{Prevención} & Realizar pruebas de seguridad en la página web.\\
+                \textbf{Prevención} & Realizar copias de seguridad sistematicas y probar las propias copias de seguridad.\\
                 \hline
-                \textbf{Plan de contingencia} & Parchear la vulnerabilidad y realizar una auditoría de seguridad en la página web.\\
+                \textbf{Plan de contingencia} & Reorganizar el proyecto y rehacer la información perdida.\\
                 \hline
                 \textbf{Probabilidad} & Media\\
-                \hline
-                \textbf{Impacto} & Muy alto\\
-                \hline
-                \caption{Vulnerabilidades de seguridad}
-            \end{longtable}
-        \end{center}
-        \begin{center}
-            \begin{longtable}{|p{6cm}|p{6cm}|}
-                \hline
-                \textbf{Descripción} & Perder toda o parte de la información almacenada en Google Forms.\\
-                \hline
-                \textbf{Prevención} & Guardar copias de seguridad de la información en un lugar seguro.\\
-                \hline
-                \textbf{Plan de contingencia} & Utilizar las copias de seguridad para recuperar la información perdida.\\
-                \hline
-                \textbf{Probabilidad} & Baja\\
                 \hline
                 \textbf{Impacto} & Muy alto\\
                 \hline
                 \caption{Perdida de información}
             \end{longtable}
         \end{center}
+        % ENFERMEDAD DE UN MIEMBRO DEL EQUIPO
         \begin{center}
             \begin{longtable}{|p{6cm}|p{6cm}|}
                 \hline
-                \textbf{Descripción} & La información almacenada en Google Forms es accedida por un tercero.\\
+                \textbf{Descripción} & Enfermedad de un miembro del equipo.\\
                 \hline
-                \textbf{Prevención} & Cifrar la conexion con la web y usar contraseña seguras con 2FA en la cuenta de Google.\\
+                \textbf{Prevención} & Realizar reuniones periodicas para que todos los miembros del equipo esten al tanto de las tareas de los demás.\\
                 \hline
-                \textbf{Plan de contingencia} & Generar nuevos certificados para la web y nueva contraseña para la cuenta de Google.\\
+                \textbf{Plan de contingencia} & Reorganizar el proyecto y reasignar las tareas del miembro enfermo.\\
                 \hline
                 \textbf{Probabilidad} & Baja\\
                 \hline
                 \textbf{Impacto} & Medio\\
                 \hline
-                \caption{Seguridad de datos}
+                \caption{Enfermedad de un miembro del equipo}
+            \end{longtable}
+        \end{center}
+        % ABANDONO DE UN MIEMBRO DEL EQUIPO
+        \begin{center}
+            \begin{longtable}{|p{6cm}|p{6cm}|}
+                \hline
+                \textbf{Descripción} & Abandono de un miembro del equipo.\\
+                \hline
+                \textbf{Prevención} & Realizar reuniones periodicas para que todos los miembros del equipo esten al tanto de las tareas de los demás.\\
+                \hline
+                \textbf{Plan de contingencia} & Reorganizar el proyecto y reasignar las tareas del miembro que abandona el proyecto.\\
+                \hline
+                \textbf{Probabilidad} & Baja\\
+                \hline
+                \textbf{Impacto} & Medio\\
+                \hline
+                \caption{Abandono de un miembro del equipo}
             \end{longtable}
         \end{center}
         \clearpage
+        % CAMBIO DE REQUISITOS DEL PROYECTO
         \begin{center}
             \begin{longtable}{|p{6cm}|p{6cm}|}
                 \hline
-                \textbf{Descripción} & Los navegadores no muestra parte o la totalidad de la página web correctamente.\\
+                \textbf{Descripción} & Cambio de requisitos del proyecto.\\
                 \hline
-                \textbf{Prevención} & Probar de forma periodica la página web en los navegadores más utilizados.\\
+                \textbf{Prevención} & Ninguna.\\
                 \hline
-                \textbf{Plan de contingencia} & Modificar la página web para que sea compatible con los navegadores actuales en el menor tiempo posible.\\
-                \hline
-                \textbf{Probabilidad} & Muy baja\\
-                \hline
-                \textbf{Impacto} & Alto\\
-                \hline
-                \caption{Compatibilidad de navegadores}
-            \end{longtable}
-        \end{center}
-        \begin{center}
-            \begin{longtable}{|p{6cm}|p{6cm}|}
-                \hline
-                \textbf{Descripción} & La pagina web sufre caidas debido a la gran cantidad de usuarios que acceden a ella o a ataques de denegación de servicio.\\
-                \hline
-                \textbf{Prevención} & Realizar pruebas de carga en la página web.\\
-                \hline
-                \textbf{Plan de contingencia} & Aumentar la capacidad de la página web mediante la creación de más contenedores cuando sea necesario (escalado horizontal).\\
+                \textbf{Plan de contingencia} & Distribuir los cambios en el proyecto y reorganizar las tareas.\\
                 \hline
                 \textbf{Probabilidad} & Alta\\
                 \hline
                 \textbf{Impacto} & Alto\\
                 \hline
-                \caption{Problemas de escalabilidad}
+                \caption{Cambio de requisitos del proyecto}
             \end{longtable}
         \end{center}
+        % FALTA DE COMUNICACION
         \begin{center}
             \begin{longtable}{|p{6cm}|p{6cm}|}
                 \hline
-                \textbf{Descripción} & La pagina tarda en cargar debido a el peso de los elementos multimedia.\\
+                \textbf{Descripción} & Falta de comunicación entre los miembros del equipo.\\
                 \hline
-                \textbf{Prevención} & Realizar pruebas de carga en la página web.\\
+                \textbf{Prevención} & Establecer canales de comunicación claros y frecuentes, como reuniones periódicas y el uso de herramientas de colaboración en línea.\\
                 \hline
-                \textbf{Plan de contingencia} & Cambiar la codificación de los elementos multimedia para que pesen menos.\\
+                \textbf{Plan de contingencia} & Realizar seguimiento regular del progreso del proyecto y fomentar la comunicación abierta y transparente entre los miembros del equipo.\\
+                \hline
+                \textbf{Probabilidad} & Alta\\
+                \hline
+                \textbf{Impacto} & Medio\\
+                \hline
+                \caption{Falta de comunicación}
+            \end{longtable}
+        \end{center}
+        % FALTA DE RECURSOS
+        \begin{center}
+            \begin{longtable}{|p{6cm}|p{6cm}|}
+                \hline
+                \textbf{Descripción} & Falta de recursos necesarios para el proyecto.\\
+                \hline
+                \textbf{Prevención} & Realizar una planificación adecuada de los recursos necesarios y asegurarse de contar con ellos antes de comenzar el proyecto.\\
+                \hline
+                \textbf{Plan de contingencia} & Buscar alternativas o soluciones temporales para suplir la falta de recursos, como el alquiler o préstamo de equipos.\\
                 \hline
                 \textbf{Probabilidad} & Media\\
                 \hline
-                \textbf{Impacto} & Muy bajo\\
+                \textbf{Impacto} & Alto\\
                 \hline
-                \caption{Elementos pesados}
+                \caption{Falta de recursos}
+            \end{longtable}
+        \end{center}
+        \clearpage
+        %RETRASO EN LA ENTREGA DEL PROYECTO
+        \begin{center}
+            \begin{longtable}{|p{6cm}|p{6cm}|}
+                \hline
+                \textbf{Descripción} & Retraso en la entrega del proyecto.\\
+                \hline
+                \textbf{Prevención} & Realizar una planificación adecuada del proyecto y establecer hitos y plazos claros.\\
+                \hline
+                \textbf{Plan de contingencia} & Reorganizar el proyecto y reasignar tareas para acelerar el proceso y cumplir con los plazos establecidos.\\
+                \hline
+                \textbf{Probabilidad} & Media\\
+                \hline
+                \textbf{Impacto} & Alto\\
+                \hline
+                \caption{Retraso en la entrega del proyecto}
+            \end{longtable}
+        \end{center}
+        %MALA GESTION DE TIEMPO
+        \begin{center}
+            \begin{longtable}{|p{6cm}|p{6cm}|}
+                \hline
+                \textbf{Descripción} & Mala gestión del tiempo.\\
+                \hline
+                \textbf{Prevención} & Realizar una planificación adecuada del proyecto y establecer hitos y plazos claros.\\
+                \hline
+                \textbf{Plan de contingencia} & Reorganizar el proyecto y reasignar tareas para acelerar el proceso y cumplir con los plazos establecidos.\\
+                \hline
+                \textbf{Probabilidad} & Media\\
+                \hline
+                \textbf{Impacto} & Alto\\
+                \hline
+                \caption{Mala gestión del tiempo}
+            \end{longtable}
+        \end{center}
+        % Expectativas no realistas
+        \begin{center}
+            \begin{longtable}{|p{6cm}|p{6cm}|}
+                \hline
+                \textbf{Descripción} & Expectativas no realistas.\\
+                \hline
+                \textbf{Prevención} & Establecer expectativas realistas y comunicar claramente los objetivos y limitaciones del proyecto.\\
+                \hline
+                \textbf{Plan de contingencia} & Revisar y ajustar las expectativas del proyecto según sea necesario y comunicar cualquier cambio a los interesados.\\
+                \hline
+                \textbf{Probabilidad} & Media\\
+                \hline
+                \textbf{Impacto} & Medio\\
+                \hline
+                \caption{Expectativas no realistas}
             \end{longtable}
         \end{center}
     \chapter{Evaluación económica}
@@ -504,27 +562,26 @@
             En todo proyecto es necesario realizar una evaluación económica para saber la viabilidad del mismo.\\
 
             En cuanto a los costes de personal, se ha estimado un coste de \textbf{20€/hora} por persona.
-            Sabiendo que somos 6 personas trabajando en el proyecto y con un esfuerzo total 90 dias con 3 horas de trabajo o 270 horas, se ha estimado un coste total de \textbf{5400€}.
-            A esto habria que sumarle los costes de la seguridad social, que se estiman en un 30\% del coste total de personal, es decir, \textbf{1620€}.
-            Por lo tanto, el coste total de personal sería de \textbf{7020€}.\\
+            Sabiendo que somos 4 personas trabajando en el proyecto y con un esfuerzo total 90 dias con 3 horas de trabajo o 270 horas, se ha estimado un coste total de \textbf{10980€}.
+            A esto habria que sumarle los costes de la seguridad social, que se estiman en un 30\% del coste total de personal, es decir, \textbf{3294€}.
+            Por lo tanto, el coste total de personal sería de \textbf{14274€}.\\
 
             En lo referente al material, al tratarse de un proyecto de desarrollo web, debemos dividirlo en dos partes: el hardware y el software.\\
             \begin{itemize}
                 \item En cuanto al hardware, tenemos que tener en cuenta que se ha utilizado un ordenador por persona, un dispositivo movil, una camara de video un microfono y un servidor.
                 \begin{itemize}
-                    \item Cada ordenador tiene un coste aproximado de \textbf{1000€} y tienen una vida media de 5 años por lo que la amortización anual sería de \textbf{200€}. Dado que el uso del proyecto es de 3 meses y el porcentaje de uso es del 33\%, el coste total sería de \textbf{16,5€} por cabeza, es decir, \textbf{99€} en total.
-                    \item El móvil tiene un coste aproximado de \textbf{500€} y tiene una vida media de 5 años por lo que la amortización anual sería de \textbf{100€}. Dado que el uso del proyecto es de 3 meses y el porcentaje de uso es del 33\%, el coste total sería de \textbf{8,25€} por cabeza, es decir, \textbf{49.5€} en total.
-                    \item La camara de video tiene un coste aproximado de \textbf{500€} y tiene una vida media de 5 años por lo que la amortización anual sería de \textbf{100€}. Dado que el uso del proyecto es de 3 meses y el porcentaje de uso es del 5\%, el coste total sería de \textbf{1,25€}
-                    \item El microfono tiene un coste aproximado de \textbf{100€} y tiene una vida media de 5 años por lo que la amortización anual sería de \textbf{20€}. Dado que el uso del proyecto es de 3 meses y el porcentaje de uso es del 5\%, el coste total sería de \textbf{0,25€}
-                    \item El servidor tiene un coste aproximado de \textbf{144€} anuales. Dado que el uso del proyecto es de 3 meses y el porcentaje de uso es del 100\%, el coste total sería de \textbf{36€}.
-                    \item En total, el coste de hardware sería de \textbf{186€}.
+                    \item Cada ordenador tiene un coste aproximado de \textbf{1000€} y tienen una vida media de 5 años por lo que la amortización anual sería de \textbf{200€}. Dado que el uso del proyecto es de 3 meses y el porcentaje de uso es del 33\%, el coste total sería de \textbf{16,5€} por cabeza, es decir, \textbf{82.5€} en total.
+                    \item El móvil tiene un coste aproximado de \textbf{500€} y tiene una vida media de 5 años por lo que la amortización anual sería de \textbf{100€}. Dado que el uso del proyecto es de 3 meses y el porcentaje de uso es del 33\%, el coste total sería de \textbf{8,25€} por cabeza, es decir, \textbf{45€} en total.
+                    \item La camara de video tiene un coste aproximado de \textbf{500€} y tiene una vida media de 5 años por lo que la amortización anual sería de \textbf{100€}. Dado que el uso del proyecto es de 3 meses y el porcentaje de uso es del 5\%, el coste total sería de \textbf{5.81€}
+                    \item El microfono tiene un coste aproximado de \textbf{100€} y tiene una vida media de 5 años por lo que la amortización anual sería de \textbf{20€}. Dado que el uso del proyecto es de 3 meses y el porcentaje de uso es del 5\%, el coste total sería de \textbf{1.16€}
+                    \item En total, el coste de hardware sería de \textbf{134.48€}.
                 \end{itemize}
                 \item En cuanto al software, el equipo esta concienciado con el software libre y por ello se ha utilizado software libre en todo el proyecto. Por lo tanto, el coste de software sería de \textbf{0€}.
                 \item En lo que refiere a costes indirectos como la luz y el acceso a internet, se ha estimado un coste de \textbf{20€} por persona. Un total de \textbf{120€}.
             \end{itemize}
-            Por lo tanto, el coste total del proyecto sería de \textbf{7326€}.
+            Por lo tanto, el coste total del proyecto sería de \textbf{14528.48€}.
         }
-    \chapter{Anexo} %TODO
+    \chapter{Anexo}
         \section{Paquetes de trabajo}
             \begin{center}
                 \begin{longtable}{|p{6cm}|p{6cm}|}
@@ -759,7 +816,7 @@
                     \hline
                     \textbf{Paquete de trabajo:} & Ciclo de vida del proyecto (1.1.6.2)\\
                     \hline
-                    \textbf{Responsable} & Xabier Badiola\\
+                    \textbf{Responsable} & Xabier Gabiña\\
                     \hline
                     \textbf{Esfuerzo} & 1 días\\
                     \hline
@@ -781,7 +838,7 @@
                     \hline
                     \textbf{Paquete de trabajo:} & Descripción del paquete de trabajo (1.1.6.3)\\
                     \hline
-                    \textbf{Responsable} & Xabier Badiola y Ander Gorocica\\
+                    \textbf{Responsable} & Ander Gorocica\\
                     \hline
                     \textbf{Esfuerzo} & 6 días\\
                     \hline
@@ -1024,29 +1081,6 @@
                 \end{longtable}
                 \begin{longtable}{|p{6cm}|p{6cm}|}
                     \hline
-                    \textbf{Paquete de trabajo:} & Insertar el video en la página web (3.1.2)\\
-                    \hline
-                    \textbf{Responsable} & Xabier Gabiña\\
-                    \hline
-                    \textbf{Esfuerzo} & 1 días\\
-                    \hline
-                    \textbf{Descripción} & Insertar el video en la página web.\\
-                    \hline
-                    \textbf{Entradas} & Ninguna\\
-                    \hline
-                    \textbf{Salidas/Entregables} & Ninguna \\
-                    \hline
-                    \textbf{Hitos} & No se ha conseguido ningún hito\\
-                    \hline
-                    \textbf{Recursos necesarios} & Se necesita un programador y hemos utilizado VSCode\\
-                    \hline
-                    \textbf{Precedencias} & 3.3.2 Editar el metraje\\
-                    \hline
-                    \caption{Insertar el video en la página web}
-                \end{longtable}
-                \clearpage
-                \begin{longtable}{|p{6cm}|p{6cm}|}
-                    \hline
                     \textbf{Paquete de trabajo:} & Insertar el formulario en la página web (3.1.1)\\
                     \hline
                     \textbf{Responsable} & Xabier Gabiña\\
@@ -1066,6 +1100,29 @@
                     \textbf{Precedencias} & 3.2.1 Generar el formulario\\
                     \hline
                     \caption{Crear guion del video}
+                \end{longtable}
+                \clearpage
+                \begin{longtable}{|p{6cm}|p{6cm}|}
+                    \hline
+                    \textbf{Paquete de trabajo:} & Insertar el video en la página web (3.1.2)\\
+                    \hline
+                    \textbf{Responsable} & Xabier Gabiña\\
+                    \hline
+                    \textbf{Esfuerzo} & 1 días\\
+                    \hline
+                    \textbf{Descripción} & Insertar el video en la página web.\\
+                    \hline
+                    \textbf{Entradas} & Ninguna\\
+                    \hline
+                    \textbf{Salidas/Entregables} & Ninguna \\
+                    \hline
+                    \textbf{Hitos} & No se ha conseguido ningún hito\\
+                    \hline
+                    \textbf{Recursos necesarios} & Se necesita un programador y hemos utilizado VSCode\\
+                    \hline
+                    \textbf{Precedencias} & 3.3.2 Editar el metraje\\
+                    \hline
+                    \caption{Insertar el video en la página web}
                 \end{longtable}
                 \begin{longtable}{|p{6cm}|p{6cm}|}
                     \hline
