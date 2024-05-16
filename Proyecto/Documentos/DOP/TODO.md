@@ -15,7 +15,7 @@
 ### 9
 
 - [ ] Excel entregar final
-- [ ] Cambiar de 8 a 3 horas dia.
+- [X] Cambiar de 8 a 3 horas dia.
 
 ## Web - Xabier Gabiña
 
